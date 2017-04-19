@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.4em;
     font-weight: 300;
     color: #888;
     line-height: 30px;
@@ -11,6 +11,10 @@ body {
 
 #painel {
   padding-top: 0px;
+}
+
+#f1-redacao {
+  height: auto;
 }
 
 h3 {

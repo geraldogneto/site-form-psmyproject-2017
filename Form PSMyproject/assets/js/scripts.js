@@ -1,3 +1,23 @@
+var span = $('<span>').css('display','inline-block')
+.css('word-break','break-all').appendTo('body').css('visibility','hidden');
+function initSpan(textarea){
+  span.text(textarea.text())
+      .width(textarea.width())
+      .css('font',textarea.css('font'));
+}
+$('textarea').on({
+    input: function(){
+      var text = $(this).val();
+      span.text(text);
+      $(this).height(text ? span.height() : '1.1em');
+    },
+    focus: function(){
+     initSpan($(this));
+    },
+    keypress: function(e){
+        if(e.which == 13) e.preventDefault();
+    }
+});
 
 function scroll_to_class(element_class, removed_height) {
 	var scroll_to = $(element_class).offset().top - removed_height;
@@ -21,18 +41,12 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function() {
 
-    $('#top-navbar-1').on('shown.bs.collapse', function(){
-    	$.backstretch("resize");
-    });
-    $('#top-navbar-1').on('hidden.bs.collapse', function(){
-    	$.backstretch("resize");
-    });
 
     /* Form */
 
     $('.f1 fieldset:first').fadeIn('slow');
 
-    $('.f1 input[type="text"], .f1 input[type="password"], .f1 textarea').on('focus', function() {
+    $('.f1 input[type="text"], .f1 textarea').on('focus', function() {
     	$(this).removeClass('input-error');
     });
 
@@ -88,24 +102,6 @@ jQuery(document).ready(function() {
 			scroll_to_class( $('.f1'), 20 );
     	});
     });
-
-    // submit
-    $('.f1').on('submit', function(e) {
-
-    	// fields validation
-    	$(this).find('input[type="text"], input[type="password"], textarea').each(function() {
-    		if( $(this).val() == "" ) {
-    			e.preventDefault();
-    			$(this).addClass('input-error');
-    		}
-    		else {
-    			$(this).removeClass('input-error');
-    		}
-    	});
-    	// fields validation
-
-    });
-
 
 
 });
