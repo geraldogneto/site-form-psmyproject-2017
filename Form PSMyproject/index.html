@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-email">Email</label>
-                                    <input type="text" name="f1-email" placeholder="Email" class="f1-email form-control" id="f1-email">
+                                    <input type="email" name="f1-email" placeholder="Email" class="f1-email form-control" id="f1-email">
                                 </div>
                                 <h6>* Confira todos os campos</h6>
                                 <h6 style="padding-bottom:10px; text-align: justify;">* Dados incorretos poderão acarretar na não inscrição do candidato</h6>
@@ -135,15 +135,28 @@
                 </div>
             </div>
         </div>
+        <div class="congrats">
+          <p>Inscrição efetuada com sucesso. <br />Boa sorte!<br><br>Você receberá um e-mail de confirmação de sua inscrição</p>
+        </div>
+
+
+
+
+        <!-- DESABILITAR O ENTER TECLADO <script> 
+<! - cortesia Script de http://www.web-source.net - Seu Guia de Design Professional Web Site e Desenvolvimento 
+função stopRKey (evt) { 
+   var evt = (evt )? evt: ((evento) evento: null); 
+   var node = (evt.target)? evt.target: ((evt.srcElement) evt.srcElement: null); 
+   if ((evt.keyCode == 13) & & (node.type == "text")) {return false;} 
+} = document.onkeypress stopRKey; -> </script> -->
+
 
         <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/scripts.js"></script>
 
-        <footer>
-          <h6>&copy 2017 MyProject Solutions</h6>
-        </footer>
-
+<footer>&copy 2017 MyProject Solutions</footer>
     </body>
+
 
 </html>

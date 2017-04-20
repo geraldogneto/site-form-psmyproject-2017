@@ -128,9 +128,9 @@ img { max-width: 100%; }
 
   #edital {
     padding: 0px 0px 15px 0;
-    width: 100%;
+    width: auto;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 
@@ -176,10 +176,12 @@ img { max-width: 100%; }
     line-height: 20px;
 
   }
-
-
-
 }
+
+.congrats {
+  display: none;
+}
+
 @media (max-width: 320px) {
   #edital {
     font-size: 12px;
