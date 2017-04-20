@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
+		    <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
         <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -17,8 +17,6 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
-
 
     </head>
 
@@ -63,9 +61,12 @@
                                     <label class="sr-only" for="f1-email">Email</label>
                                     <input type="text" name="f1-email" placeholder="Email" class="f1-email form-control" id="f1-email">
                                 </div>
+                                <h6>* Confira todos os campos</h6>
+                                <h6 style="padding-bottom:10px; text-align: justify;">* Dados incorretos poderão acarretar na não inscrição do candidato</h6>
 
 
                                 <div class="f1-buttons">
+                                  <a id="edital" href="assets/palestra.pdf" target="_blank">Clique aqui para abrir o Edital PS2017.1</a>
                                     <button type="button" class="btn btn-next">Próximo</button>
                                 </div>
                             </fieldset>
@@ -75,26 +76,43 @@
 
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-text-curso">Curso</label>
-                                    <input type="text" name="f1-text" placeholder="Curso" class="f1-text form-control"
-                                           id="f1-text-curso">
+                                    <select required="" class="f1-text form-control" id="f1-text-curso">
+                                           <option value="" disabled="" selected="" hidden="">Curso</option>
+                                            <option value="">Ciência da Computação</option>
+                                           <option value="">Engenharia da Computação</option>
+                                           <option value="">Análise e Desenvolvimento de Sistemas</option>
+                                           </select>
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-text-semestre">Semestre</label>
-                                    <input type="text" name="f1-text" placeholder="Semestre (ex.: 5o semestre)"
-                                           class="f1-text form-control" id="f1-text-semestre">
+                                    <select required="" class="f1-text form-control" id="f1-text-semestre">
+                                      <option value="" disabled="" selected="" hidden="">Semestre</option>
+                                       <option value="">1° semestre</option>
+                                      <option value="">2° semestre</option>
+                                      <option value="">3° semestre</option>
+                                      <option value="">4° semestre</option>
+                                      <option value="">5° semestre</option>
+                                      <option value="">6° semestre</option>
+                                      <option value="">7° semestre</option>
+                                      <option value="">8° semestre</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="f1-text-semestre">Período</label>
-                                    <input type="text" name="f1-text" placeholder="Período com mais disponibilidade (ex.: Manhã - Tarde - Noite)"
-                                           class="f1-text form-control" id="f1-text-periodo">
+                                    <label class="sr-only" for="f1-text-periodo">Período</label>
+                                    <select required="" class="f1-text form-control" id="f1-text-periodo">
+                                           <option value="" disabled="" selected="" hidden="">Período do dia mais livre</option>
+                                            <option value="">Manhã</option>
+                                           <option value="">Tarde</option>
+                                           <option value="">Noite</option>
+                                           </select>
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="f1-area">Área</label>
                                     <input type="text" name="f1-area" placeholder="Em que área pretende trabalhar no mercado?" class="f1-facebook form-control" id="f1-area">
                                 </div>
                                 <div class="f1-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
+                                    <button type="button" class="btn btn-previous">Anterior</button>
+                                    <button type="button" class="btn btn-next">Próximo</button>
                                 </div>
                             </fieldset>
 
@@ -107,8 +125,8 @@
                                 </div>
 
                                 <div class="f1-buttons">
-                                  <button type="button" class="btn btn-previous">Previous</button>
-                                    <button onclick="funcao01()" type="button"  class="btn btn-next" id="concluir">Concluir</button>
+                                  <button type="button" class="btn btn-previous">Anterior</button>
+                                    <button type="button"  class="btn btn-next" id="concluir">Concluir</button>
                                 </div>
 
                             </fieldset>
