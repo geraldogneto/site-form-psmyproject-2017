@@ -116,8 +116,6 @@ img { max-width: 100%; }
 
 .f1 .input-error { border-color: #f35b3f; }
 
-
-
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {}
@@ -126,12 +124,14 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 
-	.top-content { padding: 40px 0 110px 0; }
+	.top-content { padding: 40px 0 110px 0;}
 
   #edital {
     padding: 0px 0px 15px 0;
     width: 100%;
     text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   .container img {
@@ -153,7 +153,7 @@ img { max-width: 100%; }
 
 @media (max-width: 415px) {
 
-	h1, h2 { font-size: 32px; }
+	h1, h2 { font-size: 22px; }
   h6 { font-size: 0.8em; line-height: 15px;}
 
 	.f1 { padding-bottom: 20px;}
@@ -179,6 +179,30 @@ img { max-width: 100%; }
 
 
 
+}
+@media (max-width: 320px) {
+  #edital {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  p {
+   font-size: 13px;
+  }
+
+option{
+min-width:100px;
+}
 }
 
 
